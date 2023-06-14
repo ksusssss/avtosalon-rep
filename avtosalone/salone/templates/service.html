@@ -1,0 +1,35 @@
+{% extends "wrapper.html" %}
+
+{% block content %}
+    <div class="mainpage_conteiner">
+        <p class="mainpage_title">ЗАПИСЬ НА СЕРВИС</p>
+        <form method="post">
+            {% csrf_token %}
+            <p class="test_drive_form_punkt">Введите VIN-номер авто*</p>
+            {{ form.service_vin_number }}<br>
+            <p class="test_drive_form_punkt">Выберите модель авто*</p>
+            {{ form.service_mod_avto }}<br>
+            <p class="test_drive_form_punkt">Выберите тип работ*</p>
+            {{ form.service_work_type }}<br>
+            <p class="test_drive_form_punkt">Выберите дату посещения сервиса*</p>
+            {{ form.service_date }}<br>
+            <p class="test_drive_form_punkt">Введите ваше имя*</p>
+            {{ form.service_customer_name }}<br>
+            <p class="test_drive_form_punkt">Введите ваш номер телефона*</p>
+            {{ form.service_customer_phone }}<br>
+            <p class="test_drive_form_punkt">Комментарий</p>
+            {{ form.service_customer_comment }}<br>
+            <p>
+                {{ form.service_personal_info }}
+                <label>Даю согласие на обработку персональных данных*</label>
+            </p>
+            <p>
+                {{ form.service_personal_reklama }}
+                <label>Даю согласие на получение информации рекламного характера</label>
+            </p>
+            <span>{{ error }}</span>
+            <p class="primechanie">Поля, отмеченные *, являются обязательными для запонения</p>
+            <button type="submit" class="call_request_button">Отправить заявку</button><br>
+        </form>
+    </div>
+{% endblock %}

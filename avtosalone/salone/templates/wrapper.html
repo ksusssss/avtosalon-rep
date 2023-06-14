@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GREENLIGHT</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/wrapper.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/menu_bar.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/main_page.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/model_page.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/page_of_model.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/test_drive_page.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/users.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/service.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/instructionpage.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/contact_page.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/fonts.css' %}" type="text/css">
+</head>
+<body>
+    {% include "header.html" %}
+    {% include "menu_bar.html" %}
+
+    {% block content %}
+    {% endblock %}
+
+    {% include "footer.html" %}
+</body>
+</html>

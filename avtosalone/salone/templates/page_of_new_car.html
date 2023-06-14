@@ -1,0 +1,57 @@
+{% extends "wrapper.html" %}
+
+{% block content %}
+    <div class="mainpage_conteiner">
+        <div class="page_of_model_title_conteiner">
+            <p class="mainpage_title">{{allavto.mod_avto}} {{allavto.complectation}}</p>
+            <a href="/test-drive">
+                <input type="button" class="call_request_button" id="page_of_model_button_td" value="Записаться на просмотр авто">
+            </a>
+        </div>
+        <div>
+            <table>
+                <tr class="page_of_model_list_items">
+                    <td class="pom_table_1">Цена (в рублях):</td>
+                    <td class="pom_table_2">{{allavto.cena}}</td>
+                </tr>
+                <tr class="page_of_model_list_items">
+                    <td class="pom_table_1">Год выпуска:</td>
+                    <td class="pom_table_2">{{allavto.production_year}}</td>
+                </tr>
+                <tr class="page_of_model_list_items">
+                    <td class="pom_table_1">Объем двигателя (м3):</td>
+                    <td class="pom_table_2">{{allavto.engin_capacity}}</td>
+                </tr>
+                <tr class="page_of_model_list_items">
+                    <td class="pom_table_1">Мощность (л.с.):</td>
+                    <td class="pom_table_2">{{allavto.engen_power}}</td>
+                </tr>
+                <tr class="page_of_model_list_items">
+                    <td class="pom_table_1">Топливо:</td>
+                    <td class="pom_table_2">{{allavto.fuel}}</td>
+                </tr>
+                <tr class="page_of_model_list_items">
+                    <td class="pom_table_1">КПП:</td>
+                    <td class="pom_table_2">{{allavto.transmission}}</td>
+                </tr>
+                <tr class="page_of_model_list_items">
+                    <td class="pom_table_1">Привод:</td>
+                    <td class="pom_table_2">{{allavto.privod}}</td>
+                </tr>
+                <tr class="page_of_model_list_items">
+                    <td class="pom_table_1">Цвет:</td>
+                    <td class="pom_table_2">{{allavto.cvet_avto}}</td>
+                </tr>
+                <tr class="page_of_model_list_items">
+                    <td class="pom_table_1">Комплектация:</td>
+                    <td class="pom_table_2">{{allavto.complectation}}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="model_photo_galery">
+            <img src="{{allavto.photo_avto_1.url}}" class="page_of_model_galery">
+            <img src="{{allavto.photo_avto_2.url}}" class="page_of_model_galery">
+            <img src="{{allavto.photo_avto_3.url}}" class="page_of_model_galery">
+        </div>
+    </div>
+{% endblock %}

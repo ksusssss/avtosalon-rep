@@ -1,0 +1,66 @@
+.test_drive_page_conteiner{
+    margin-left: 14%;
+    margin-right: 14%;
+}
+
+.test_drive_form_punkt{
+    margin-left: 2%;
+    margin-bottom: 1%;
+    font-size: 20px;
+}
+
+.Select{
+    width: 40%;
+    height: 35px;
+    border-radius: 1px;
+    border-color: rgba(20, 255, 0, 1);
+    border-style: none;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    font-size: 20px;
+    font-family: GilroyRegular;
+    background-color: rgba(241, 241, 241, 0.1);
+}
+
+.input_field{
+    width: 45%;
+    height: 35px;
+    border-radius: 1px;
+    border-color: rgba(20, 255, 0, 1);
+    border-style: none;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    font-size: 20px;
+    font-family: GilroyRegular;
+    background-color: rgba(241, 241, 241, 0.1);
+}
+
+.input_field_textarea{
+    width: 70%;
+    height: 200px;
+    border-radius: 5px;
+    border-color: rgba(20, 255, 0, 1);
+    border-style: solid;
+    font-size: 18px;
+    font-family: GilroyRegular;
+}
+
+.primechanie{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    font-family: GilroyLight;
+    color: rgba(255, 0, 0, 1);
+}
+
+.call_request_button{
+    width: 20%;
+    height: 50px;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(20, 255, 0, 1);
+    font-family: GilroySemibold;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}

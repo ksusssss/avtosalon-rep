@@ -1,0 +1,56 @@
+.contact_item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+#contact_title{
+    color: rgba(20, 255, 0, 1);
+    font-family: GilroySemibold;
+    font-size: 45px;
+    margin-left: 3px;
+    margin-right: 1px;
+}
+
+.greenlight_logo_contact{
+    width: 150px;
+    margin-right: 1%;
+}
+
+.contact_call_button{
+    background-color: rgba(20, 255, 0, 1);
+    border: 0;
+    width: 350px;
+    height: 55px;
+    border-radius: 10px;
+    font-family: GilroySemibold;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+.adress_box_title{
+    font-family: GilroySemibold;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.adress_box_text{
+    margin-left: 2%;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.salone_service_title{
+    font-family: GilroySemibold;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.salone_service_list_item{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.7);
+}

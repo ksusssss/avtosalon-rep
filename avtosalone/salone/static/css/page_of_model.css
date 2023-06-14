@@ -1,0 +1,38 @@
+.page_of_model_title_conteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.model_photo_galery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.page_of_model_galery{
+    width: 49%;
+}
+
+#page_of_model_button_td{
+    font-size: 15px;
+    width: 100%;
+}
+
+.page_of_model_list_items{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.pom_table_1{
+    width: 300px;
+    height: 50px;
+}
+
+.pom_table_2{
+    width: 300px;
+    height: 50px;
+    font-family: GilroySemibold;
+}

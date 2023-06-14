@@ -1,0 +1,50 @@
+{% extends "wrapper.html" %}
+
+{% block content %}
+    <div class="mainpage_conteiner">
+        <div>
+            <img src="/static/img/uaz-karusel-4.jpg" class="karusel-jpg">
+        </div>
+        <p class="mainpage_title">МОДЕЛЬНЫЙ РЯД</p>
+        <div>
+            <div class="all_models_conteiner">
+                {% for model in models_list %}
+
+                    <div class="model_conteiner">
+                        <a href="/models/{{model.id}}">
+                            <div class="model_conteiner_photo">
+                                <img src="{{model.model_ph_1.url}}" class="model_photo">
+                            </div>
+                            <div class="model_conteiner_info">
+                                {{model.model_model}}
+                                {{model.model_complectation}}
+                            </div>
+                            <div class="model_conteiner_cena">
+                                Цена: {{model.model_cena}}
+                            </div>
+                        </a>
+                    </div>
+
+                {% endfor %}
+            </div>
+        </div>
+        <p class="mainpage_title">ОНЛАЙН-СЕРВИСЫ</p>
+        <div class="serv_online">
+            <hr class="serv_online_hr">
+            <a href="/test-drive">
+            <p class="serv_online_punkt">Тест-драйв</p>
+            </a>
+            <hr class="serv_online_hr">
+            <a href="/all_avto">
+                <p class="serv_online_punkt">Авто в наличии</p>
+            </a>
+            <hr class="serv_online_hr">
+            <a href="/customer/bu_avto_page">
+                <p class="serv_online_punkt">Авто с пробегом</p>
+            </a>
+            <hr class="serv_online_hr">
+        </div>
+        <p class="mainpage_title">ЗАКАЗАТЬ ЗВОНОК</p>
+        <a href="/request_call"><input type="button" class="call_request_button" value="Заказать звонок"></a>
+    </div>
+{% endblock %}

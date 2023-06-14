@@ -1,0 +1,13 @@
+{% extends "wrapper.html" %}
+
+{% block content %}
+    <div class="mainpage_conteiner">
+        <p class="mainpage_title">РУКОВОДСТВА ПОЛЬЗОВАТЕЛЯ</p>
+        {% for model in models_list %}
+        <div class="punkt_instruction">
+            <p>Руководство по эксплуатации УАЗ {{model.model_model}} {{model.model_complectation}}</p>
+            {{model.model_instruction.url}}
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

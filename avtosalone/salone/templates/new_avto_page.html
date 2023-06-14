@@ -1,0 +1,28 @@
+{% extends "wrapper.html" %}
+
+{% block content %}
+    <div class="mainpage_conteiner">
+        <p class="mainpage_title">НОВЫЕ АВТО</p>
+        <div class="all_models_conteiner">
+            {% for avto in avto_list %}
+                <div class="model_conteiner">
+                    <a href="/customer/new_avto_page/{{avto.id}}">
+                        <div class="model_conteiner_photo">
+                            <img src="{{avto.photo_avto_1.url}}" class="model_photo">
+                        </div>
+                        <div class="model_conteiner_info">
+                            {{avto.mod_avto}}
+                            {{avto.complectation}}
+                        </div>
+                        <div class="model_conteiner_info">
+                            Год: {{avto.production_year}}
+                        </div>
+                        <div class="model_conteiner_cena">
+                            Цена: {{avto.cena}} рублей
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

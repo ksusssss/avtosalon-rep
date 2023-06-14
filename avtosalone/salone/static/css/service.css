@@ -1,0 +1,11 @@
+.serv_input_field{
+    width: 70%;
+    height: 35px;
+    border-radius: 1px;
+    border-color: rgba(20, 255, 0, 1);
+    border-style: none;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    font-family: GilroyRegular;
+    background-color: rgba(241, 241, 241, 0.1);
+}

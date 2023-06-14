@@ -1,0 +1,27 @@
+{% extends "wrapper.html" %}
+
+{% block content %}
+  <div class="mainpage_conteiner">
+    <p class="mainpage_title">МОДЕЛИ</p>
+    <div class="all_models_conteiner">
+      {% for model in models_list %}
+
+          <div class="model_conteiner">
+              <a href="/models/{{model.id}}">
+                <div class="model_conteiner_photo">
+                    <img src="{{model.model_ph_1.url}}" class="model_photo">
+                </div>
+                <div class="model_conteiner_info">
+                    {{model.model_model}}
+                    {{model.model_complectation}}
+                </div>
+                <div class="model_conteiner_cena">
+                    Цена: от {{model.model_cena}} рублей
+                </div>
+            </a>
+          </div>
+
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}

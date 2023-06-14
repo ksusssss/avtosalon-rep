@@ -1,0 +1,49 @@
+{% extends "wrapper.html" %}
+
+{% block content %}
+    <div class="mainpage_conteiner">
+        <div class="page_of_model_title_conteiner">
+            <p class="mainpage_title">{{avtomodel.model_model}} {{avtomodel.model_complectation}}</p>
+            <a href="/test-drive">
+                <input type="button" class="call_request_button" id="page_of_model_button_td" value="Записаться на тест-драйв">
+            </a>
+        </div>
+        <div>
+            <table>
+                <tr class="page_of_model_list_items">
+                    <td class="pom_table_1">Цена: </td>
+                    <td class="pom_table_2">от {{avtomodel.model_cena}} рублей</td>
+                </tr>
+                <tr class="page_of_model_list_items">
+                    <td class="pom_table_1">Объем двигателя(м3): </td>
+                    <td class="pom_table_2">{{avtomodel.model_engin_capacity}}</td>
+                </tr>
+                <tr class="page_of_model_list_items">
+                    <td class="pom_table_1">Мощность двигателя(л.с.):</td>
+                    <td class="pom_table_2">{{avtomodel.model_engin_power}}</td>
+                </tr>
+                <tr class="page_of_model_list_items">
+                    <td class="pom_table_1">Топливо: </td>
+                    <td class="pom_table_2">{{avtomodel.model_fuel}}</td>
+                </tr>
+                <tr class="page_of_model_list_items">
+                    <td class="pom_table_1">КПП: </td>
+                    <td class="pom_table_2">{{avtomodel.model_transmission}}</td>
+                </tr>
+                <tr class="page_of_model_list_items">
+                    <td class="pom_table_1">Привод: </td>
+                    <td class="pom_table_2">{{avtomodel.model_privod}}</td>
+                </tr>
+                <tr class="page_of_model_list_items">
+                    <td class="pom_table_1">Комплектация: </td>
+                    <td class="pom_table_2">{{avtomodel.model_complectation}}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="model_photo_galery">
+            <img src="{{avtomodel.model_ph_1.url}}" class="page_of_model_galery">
+            <img src="{{avtomodel.model_ph_2.url}}" class="page_of_model_galery">
+            <img src="{{avtomodel.model_ph_3.url}}" class="page_of_model_galery">
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "wrapper.html" %}
+
+{% block content %}
+    <div class="mainpage_conteiner">
+        <a href="/">
+            <div class="contact_item">
+                <img src="/static/img/greenlight_logo.png" class="greenlight_logo_contact">
+                <h1 id="contact_title">GREENLIGHT</h1>
+            </div>
+        </a>
+        <div class="adress_box">
+            <p class="adress_box_title">Адрес:</p>
+            <p class="adress_box_text">город Ульяновск, Московское шоссе, 64Д</p>
+            <p class="adress_box_title">Режим работы:</p>
+            <p class="adress_box_text">ежедневно с 8:00 до 20:00</p>
+            <p class="adress_box_title">Телефон:</p>
+            <p class="adress_box_text">+7-987-654-32-10</p>
+            <p><input type="button" name="call" value="Заказать звонок" class="contact_call_button"></p>
+        </div>
+        <hr class="serv_online_hr">
+        <div class="salone_service">
+            <p class="salone_service_title">Услуги автосалона</p>
+            <ul class="salone_service_list">
+                <a href="/test-drive"><li class="salone_service_list_item">Тест-драйв</li></a>
+                <a href="/users/service_registration"><li class="salone_service_list_item">Сервис</li></a>
+            </ul>
+        </div>
+    </div>
+{% endblock %}
